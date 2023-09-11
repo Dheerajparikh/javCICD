@@ -4,7 +4,7 @@ steps:
   args: ['clean', 'install']
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'bash'
-  args: ['-c', 'gcloud config set app/cloud_build_timeout 1600 && gcloud app deploy --bucket=gs://java-spring-app']
+  args: ['-c', 'gcloud config set app/cloud_build_timeout 1600 && gcloud app deploy --bucket=gs://java-spring-app --version=2']
 timeout: '1600s'
 # - name: 'gcr.io/cloud-builders/gcloud'
 #   entrypoint: 'gcloud'
