@@ -1,5 +1,5 @@
 steps:
-- name: 'gcr.io/cloud-builders/maven:3.6.3'
+- name: 'gcr.io/cloud-builders/mvn'
   entrypoint: 'mvn'
   args: ['clean', 'install']
 - name: 'gcr.io/cloud-builders/gcloud'
