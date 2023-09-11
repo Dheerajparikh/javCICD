@@ -4,4 +4,4 @@ steps:
   args: ['clean', 'install']
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'gcloud'
-  args: ['app', 'deploy', '--project=	augmented-voice-396916', '--version=1', 'target/spring-boot-application.jar']
+  args: ['app', 'deploy', '--project=augmented-voice-396916', '--version=1', 'target/spring-boot-application.jar']
