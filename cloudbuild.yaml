@@ -12,6 +12,7 @@ steps:
     - |
       if [ $? -eq 0 ]; then
         gcloud config set app/cloud_build_timeout 1600 && gcloud app deploy --bucket=gs://java-spring-app --version=2
+        echo "Unit tests Passed."
       else
         echo "Unit tests failed. Deployment aborted."
       fi
